@@ -1,9 +1,14 @@
 .main-content {
-  padding-left: 195px;
-  padding-right: 195px;
+  padding-left: 125px;
+  padding-right: 125px;
   height: calc(100vh - 230px);
+  display: grid;
+  grid-template-rows: 1fr 2fr;
+  margin-top: 80px;
 
-  .search-box {
-    background-color: cadetblue;
+  .sub-header {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    margin-bottom: 40px;
   }
 }
