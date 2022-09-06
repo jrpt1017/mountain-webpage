@@ -1,4 +1,51 @@
 .header-wrapper {
   background-color: #3852F7;
   height: 460px;
+  position: relative;
+
+  .adrenalin-title-container{
+    margin-top: 70px;
+    margin-left: 195px;
+  }
+
+  .title-container { 
+    position: absolute;
+    bottom: 135px;
+    left: 195px;
+
+    .header-title {
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: 900;
+      font-size: 80px;
+      color: #fff;
+      margin: unset;
+      text-align: left;
+      line-height: 68px;
+      margin-bottom: 24px;
+    }
+
+    .header-subtitle {
+      font-family: 'Roboto';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 32px;
+      margin: unset;
+      line-height: 32px;
+      color: #fff;
+    }
+  }
+  
+  .green-triangle {
+    position: absolute;
+    bottom: 0;
+    right: 99.48px;
+  }
+
+  .violet-triangle {
+    right: 370.69px;
+    position: absolute;
+    top: 125.84px;
+  }
 }
