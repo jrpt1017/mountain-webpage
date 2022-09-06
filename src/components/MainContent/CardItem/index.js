@@ -1,10 +1,20 @@
 import React from "react";
 import "./index.scss";
 import CircleIcon from "./CircleIcon";
-const CardItem = ({ title, description }) => {
+const CardItem = ({ title, description, imageName }) => {
   return (
     <div className="card-item">
-      <div className="image-container">
+      <div
+        className="image-container"
+        style={{
+          backgroundImage: `url(images/${imageName})`,
+          backgroundSize: "100% 100%",
+        }}
+      >
+        {/* <img
+          src="images/Mountain1.jpg"
+          style={{ height: "300px", width: "300px" }}
+        /> */}
         <CircleIcon />
       </div>
       <div className="text-content">
