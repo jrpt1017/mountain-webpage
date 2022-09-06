@@ -1,7 +1,8 @@
 .cardlist-container {
   display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  column-gap: 100px;
+  column-gap: 30px;
   justify-content: center;
   row-gap: 64px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-auto-rows: 436px;
 }
