@@ -11,10 +11,6 @@ const CardItem = ({ title, description, imageName }) => {
           backgroundSize: "100% 100%",
         }}
       >
-        {/* <img
-          src="images/Mountain1.jpg"
-          style={{ height: "300px", width: "300px" }}
-        /> */}
         <CircleIcon />
       </div>
       <div className="text-content">
