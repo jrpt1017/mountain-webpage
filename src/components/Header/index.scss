@@ -41,12 +41,20 @@
     position: absolute;
     bottom: 0;
     right: 99.48px;
+    z-index: 1;
   }
 
   .violet-triangle {
     right: 370.69px;
     position: absolute;
     top: 125.84px;
+  }
+
+  .blue-triangle {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 0;
   }
 }
 
