@@ -40,7 +40,7 @@ const MainContent = () => {
         <SearchBar />
         <Sort options={filterOptions} handleSort={handleSortItems} />
       </div>
-      <CardList mountains={cards} />
+      {/* <CardList mountains={cards} /> */}
     </div>
   );
 };

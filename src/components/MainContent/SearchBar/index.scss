@@ -5,15 +5,14 @@
   border-radius: 8px;
 }
 
-input::-webkit-input-placeholder {/* Chrome/Opera/Safari/Edge */
-  /*styles here*/
+input::-webkit-input-placeholder {
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 150%;
+  color: #000;
 }
-
 
 input {
   text-indent: 52px;

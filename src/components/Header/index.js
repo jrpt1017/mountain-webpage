@@ -21,19 +21,16 @@ const Header = () => {
           className="violet-triangle"
           src="/violet-triangle.svg"
           alt="violet-triangle"
-          align="right"
         />
         <img
           className="green-triangle"
           src="/green-triangle.svg"
           alt="green-triangle"
-          align="right"
         />
         <img
           className="blue-triangle"
           src="/blue-triangle.svg"
           alt="blue-triangle"
-          align="right"
         />
       </div>
     </div>

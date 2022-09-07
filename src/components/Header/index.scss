@@ -49,3 +49,53 @@
     top: 125.84px;
   }
 }
+
+@media screen and (max-width:480px) {
+  .header-wrapper {
+    height: 220px;
+
+    .adrenalin-title-container{
+      margin-top: 25px;
+      margin-left: 25px;
+      height: 15.58px;
+    }
+
+    .title-container {
+      bottom: 53px;
+      left: 25px;
+
+      .header-title{
+        font-size: 32px;
+        line-height: 35px;
+        margin-bottom: 8px;
+      }
+
+      .header-subtitle {
+        font-size: 14px;
+        line-height: 20px;
+        width: 178px;
+      }
+    }
+
+    .green-triangle {
+      height: 115px;
+      top: 105.09px;
+      left: 250px;
+      z-index: 1;
+    }
+
+    .violet-triangle {
+      top: 125.84px;
+      left: 220px;
+      height: 80px;
+    }
+
+    .blue-triangle {
+      position: absolute;
+      height: 105px;
+      top: 60px;
+      left: 320px;
+      z-index: 0;
+    }
+  }
+}
