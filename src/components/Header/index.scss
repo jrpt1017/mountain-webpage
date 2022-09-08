@@ -2,6 +2,7 @@
   background-color: #3852F7;
   height: 460px;
   position: relative;
+  overflow: hidden;
 
   .adrenalin-title-container{
     margin-top: 70px;
@@ -89,21 +90,20 @@
     .green-triangle {
       height: 115px;
       top: 105.09px;
-      left: 250px;
+      right: 13px;
       z-index: 1;
     }
 
     .violet-triangle {
       top: 125.84px;
-      left: 220px;
+      right: 92.68px;
       height: 80px;
     }
 
     .blue-triangle {
       position: absolute;
       height: 105px;
-      top: 60px;
-      left: 320px;
+      top: 83px;
       z-index: 0;
     }
   }

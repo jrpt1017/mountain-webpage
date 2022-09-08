@@ -16,7 +16,7 @@ const Header = () => {
         </p>
       </div>
 
-      {/* <div className="triangle-container">
+      <div className="triangle-container">
         <img
           className="violet-triangle"
           src="/violet-triangle.svg"
@@ -32,7 +32,7 @@ const Header = () => {
           src="/blue-triangle.svg"
           alt="blue-triangle"
         />
-      </div> */}
+      </div>
     </div>
   );
 };
