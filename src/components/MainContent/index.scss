@@ -31,9 +31,10 @@
   
     .sub-header {
       display: grid;
-      grid-template-columns: 6fr 6fr;
+      grid-template-columns: 1fr 1fr;
       margin-bottom: 40px;
       position: relative;
+      gap: 20px;
     }
   
     .sub-header:before {

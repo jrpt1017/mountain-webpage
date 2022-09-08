@@ -1,6 +1,14 @@
 .form-control {
-  height: 64px;
+  height: 100%;
   width: 220px;
   border: 2px solid #E6E6E6;
   border-radius: 8px;
+}
+
+@media screen and (max-width: 480px){
+  .form-control {
+    width:100%;
+    border: 2px solid #E6E6E6;
+    border-radius: 8px;
+  }
 }

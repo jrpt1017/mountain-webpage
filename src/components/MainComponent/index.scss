@@ -1,8 +1,4 @@
 .page-wrapper {
   display: grid;
   grid-template-rows: 1fr 3fr;
-
-  .header-wrapper {
-    grid-row: 1;
-  }
 }
