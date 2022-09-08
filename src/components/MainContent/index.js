@@ -7,6 +7,7 @@ import { mockData } from "../../mockData";
 const MainContent = () => {
   const filterOptions = ["Sort a A-Z", "Sort a Z-A"];
   const [cards, setCards] = useState(mockData);
+  const [searchTerm, setsearchTerm] = useState("");
 
   const handleSortItems = (e) => {
     const sortValue = e.target.value;
@@ -25,6 +26,10 @@ const MainContent = () => {
     setCards(cardCopy);
   };
 
+  const handleSearchMountain = (e) => {
+    setsearchTerm(e.target.value);
+  };
+
   // Upon component is mounted, sort it alphabetically -- by default.
   useEffect(() => {
     const cardCopy = [...cards];
@@ -34,10 +39,18 @@ const MainContent = () => {
     setCards(cardCopy);
   }, []);
 
+  useEffect(() => {
+    const cardsCopy = [...cards];
+    const items = cardsCopy.filter((item) => {
+      return item.title.toLowerCase().includes(searchTerm.toLocaleLowerCase());
+    });
+    console.log(items.map((i) => i.title));
+  }, [searchTerm]);
+
   return (
     <div className="main-content-wrapper">
       <div className="sub-header">
-        <SearchBar />
+        <SearchBar handleSearch={handleSearchMountain} value={searchTerm} />
         <Sort options={filterOptions} handleSort={handleSortItems} />
       </div>
       <CardList mountains={cards} />

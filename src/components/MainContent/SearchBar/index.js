@@ -1,11 +1,16 @@
 import React from "react";
 import "./index.scss";
 
-const SearchBar = () => {
+const SearchBar = ({ handleSearch, value }) => {
   return (
-    <div>
-      <input placeholder="Search for mountains" className="search-field" />
-    </div>
+    <>
+      <input
+        placeholder="Search for mountains"
+        className="search-field"
+        onChange={handleSearch}
+        value={value}
+      />
+    </>
   );
 };
 
