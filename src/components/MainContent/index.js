@@ -5,7 +5,7 @@ import SearchBar from "./SearchBar";
 import Sort from "./Sort";
 import { mockData } from "../../mockData";
 const MainContent = () => {
-  const filterOptions = ["A-Z", "Z-A"];
+  const filterOptions = ["Sort a A-Z", "Sort a Z-A"];
   const [cards, setCards] = useState(mockData);
 
   const handleSortItems = (e) => {
@@ -40,7 +40,7 @@ const MainContent = () => {
         <SearchBar />
         <Sort options={filterOptions} handleSort={handleSortItems} />
       </div>
-      {/* <CardList mountains={cards} /> */}
+      <CardList mountains={cards} />
     </div>
   );
 };

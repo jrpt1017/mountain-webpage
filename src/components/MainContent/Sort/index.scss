@@ -1,14 +1,36 @@
-.form-control {
+.custom-select{
+  font-family: 'Roboto';
+  color: yellow;
   height: 100%;
-  width: 220px;
-  border: 2px solid #E6E6E6;
-  border-radius: 8px;
+  .form-control {
+    height: 100%;
+    width: 220px;
+    border: 2px solid #E6E6E6;
+    border-radius: 8px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 110%;
+    color: #3852F7;
+    padding-left: 50px;
+  }
+}
+
+.select-items div,.select-selected {
+  color: #ffffff;
+  padding: 8px 16px;
+  border: 1px solid transparent;
+  border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+  cursor: pointer;
 }
 
 @media screen and (max-width: 480px){
-  .form-control {
-    width:100%;
-    border: 2px solid #E6E6E6;
-    border-radius: 8px;
+  .custom-select{
+    .form-control {
+      width:100%;
+      border: 2px solid #E6E6E6;
+      border-radius: 8px;
+    }
   }
 }

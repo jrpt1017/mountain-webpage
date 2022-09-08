@@ -4,5 +4,15 @@
   justify-content: center;
   row-gap: 64px;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  grid-auto-rows: 436px;
+}
+
+@media screen and (max-width: 480px){
+  .cardlist-container {
+    display: grid;
+    column-gap: 20px;
+    justify-content: center;
+    row-gap: 24px;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: auto;
+  }
 }
